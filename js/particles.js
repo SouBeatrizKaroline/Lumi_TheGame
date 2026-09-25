@@ -1,5 +1,5 @@
 class ParticleSystem {
-  constructor() { this.items = []; }
+  constructor() { this.items = []; Object.defineProperty(this, 'particles', { get: () => this.items }); }
   spawnStarCollect(x, y) { this.spawnBurst(x, y, '#ffd15c'); }
   spawnStarBurst(x, y, isSecret = false) { this.spawnBurst(x, y, isSecret ? '#d38fff' : '#ffd15c'); }
   spawnSecretCollect(x, y) { this.spawnBurst(x, y, '#d38fff'); }
