@@ -1,5 +1,5 @@
 /**
- * Lumi & the Lost Stars
+ * Lunara: As Estrelas Perdidas
  * Procedural Audio Engine using Web Audio API
  */
 class SoundEngine {

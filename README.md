@@ -1,20 +1,28 @@
-# Lumi & the Lost Stars
+# Lunara: As Estrelas Perdidas
 
 > *"The forest remembers its light."*
 
-**Lumi & the Lost Stars** é um jogo web 2D poético, aconchegante e totalmente jogável diretamente no navegador, desenvolvido em HTML5 Canvas e JavaScript modular de alta performance, sem dependências externas.
+**Lunara: As Estrelas Perdidas** é um jogo web 2D poético, aconchegante e jogável diretamente no navegador, desenvolvido em HTML5 Canvas e JavaScript modular, sem dependências externas.
 
-O projeto foi construído seguindo fielmente a direção de arte e o conceito visual da protagonista **Lumi**: uma pequena gatinha preta com olhos dourados cintilantes, capa azul esvoaçante e um pingente mágico em forma de estrela.
+O projeto foi construído seguindo fielmente a direção de arte e o conceito visual da protagonista **Lunara**: uma menina-gata com olhos dourados cintilantes, capa azul esvoaçante e poderes estelares despertados pela coleta de estrelas.
 
 ---
 
 ## 🌟 1. Conceito e História
 
-As estrelas desapareceram do céu noturno e seus fragmentos caíram sobre uma floresta encantada, mergulhando-a em sombras e silêncio. No papel de Lumi, sua missão é explorar a floresta, recuperar os 20 fragmentos principais de estrelas e as 3 estrelas secretas perdidas, devolvendo progressivamente a luz, a vida e a magia ao mundo até o despertar da lendária **Árvore Ancestral**.
+As estrelas desapareceram do céu noturno e seus fragmentos caíram sobre uma floresta encantada, mergulhando-a em sombras e silêncio. No papel de Lunara, sua missão é explorar a floresta, recuperar os 20 fragmentos principais de estrelas e as 3 estrelas secretas perdidas, devolvendo progressivamente a luz, a vida e a magia ao mundo até o despertar da lendária **Árvore Ancestral**.
 
 ---
 
 ## 🎮 2. Gameplay e Mecânicas
+
+### Poderes estelares
+Lunara desbloqueia e usa poderes ao reunir estrelas. Quando um poder estiver pronto, pressione `E`:
+- **5 estrelas — Salto Estelar:** impulso vertical maior.
+- **10 estrelas — Passo Estelar:** velocidade aumentada e um segundo salto no ar durante a ativação.
+- **15 estrelas — Forma Estelar:** velocidade aumentada, segundo salto e proteção contra quedas por alguns segundos.
+
+O HUD mostra o nível e o estado do poder. Cada poder precisa ser carregado novamente pela próxima conquista de estrelas.
 
 ### Movimentação Refinada & Platforming Polido
 - **Aceleração e desaceleração suaves:** sem deslizamentos bruscos; controles responsivos e naturais.
@@ -23,7 +31,7 @@ As estrelas desapareceram do céu noturno e seus fragmentos caíram sobre uma fl
 - **Pulo Variável:** a altura do salto é proporcional ao tempo em que a tecla/botão é pressionado.
 - **Cogumelos Elásticos:** grandes cogumelos bioluminescentes funcionam como trampolins com dispersão de esporos brilhantes.
 - **Checkpoints Rúnicos:** monólitos de pedra ancestrais que se iluminam ao toque e salvam o progresso com segurança.
-- **Respawn Gentil (Sem Game Over):** cair no riacho ou em fendas dissolve Lumi em poeira estelar cintilante e a transporta de volta ao último monólito ativado, sem penalidades de vida.
+- **Respawn Gentil (Sem Game Over):** cair no riacho ou em fendas dissolve Lunara em poeira estelar cintilante e a transporta de volta ao último monólito ativado, sem penalidades de vida.
 
 ### Controles
 - **Desktop:**
@@ -48,7 +56,7 @@ A jornada se desenvolve em uma fase única, horizontal e totalmente explorável 
 4. **Riacho Encantado (`x: 3650 – 4850`):** Águas correntes, cascatas cintilantes e pedras de apoio sobre a correnteza.
 5. **Clareira Mística (`x: 4850 – 5950`):** Ruínas místicas tomadas por flores e arcos rúnicos.
    - *💎 Estrela Secreta 3:* Guardada na fenda superior do arco em ruínas.
-6. **Árvore Ancestral (`x: 5950 – 7200`):** O santuário sagrado final onde Lumi restaura a constelação perdida.
+6. **Árvore Ancestral (`x: 5950 – 7200`):** O santuário sagrado final onde Lunara restaura a constelação perdida.
 
 ---
 
@@ -86,7 +94,7 @@ Acessíveis a qualquer momento através do menu ou do botão de engrenagem (`⚙
 ## 📂 7. Estrutura Modular da Arquitetura
 
 ```
-Lumi_TheGame/
+LunaraEAsEstrelas_OJogo/
 ├── index.html          # Ponto de entrada, viewport canvas, HUD e overlays
 ├── css/
 │   └── style.css       # Estilização visual, paleta aconchegante e controles touch
@@ -97,7 +105,7 @@ Lumi_TheGame/
 │   ├── particles.js    # Vagalumes, explosões estelares, esporos e textos flutuantes
 │   ├── collectibles.js # Fragmentos principais, estrelas secretas e atração magnética
 │   ├── checkpoint.js   # Monólitos rúnicos, ativação e respawn gracioso
-│   ├── player.js       # Lumi: máquina de estados, física, colisões e renderizador
+│   ├── player.js       # Lunara: máquina de estados, física, colisões e renderizador
 │   ├── level.js        # Plataformas, cogumelos elásticos, água e cenários
 │   ├── world.js        # Parallax multicamadas e transformação da floresta (0% a 100%)
 │   ├── ui.js           # Gerenciador de HUD, modais, acessibilidade e touch

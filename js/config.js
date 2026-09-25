@@ -1,5 +1,5 @@
 /**
- * Lumi & the Lost Stars
+ * Lunara: As Estrelas Perdidas
  * Global Configuration and Constants
  */
 const CONFIG = {
